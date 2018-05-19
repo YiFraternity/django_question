@@ -1,0 +1,43 @@
+{% extends 'question/base.html' %}
+{% block title %}类型{% endblock %}
+{% block detail %}
+    <div>
+        <div>
+            <li>
+                <a href="{% url 'question:type' %}">类型</a>
+                <a href="{% url 'question:quest' %}">题目</a>
+            </li>
+        </div>
+        <div>
+            <ul>
+                <script type="text/javascript"> 
+                    function rm_dup(array){
+                        var res=[];
+                        for(var i=0,arrayLen=array.length;i<arrayLen;i++){
+                            for(var j=0,resLen=res.length;j<resLen;j++){
+                                if(array[i] === res[j]){
+                                    break;
+                                }
+                            }
+                            if(j === resLen){
+                                res.push(array[i])
+                            }
+                        }
+                        return res;
+                    }
+                    var arr=[];
+                    {% for question in questions %}
+                        var a={{ question.question_type }}
+                        arr.push(a)
+                    {% endfor %}
+                    var result=rm_dup(arr);
+                    for(var i=0;i<result.length;i++){
+                        document.write("<li>");
+                        document.write(result[i].toString().link("http://127.0.0.1:8000/question/type/"+result[i]+"/"));
+                        document.write("</li>");
+                    }
+                </script>
+            </ul>
+        </div>
+    </div>
+{% endblock %}

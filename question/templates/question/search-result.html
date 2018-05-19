@@ -1,0 +1,16 @@
+{% extends "question/base.html" %}
+
+{% block title%}答案{% endblock %}
+
+{% block detail %}
+    <p>您正在查找的类型是 <strong> {{ q }}</strong></p>
+    {% if quests %}
+        <ul>
+            {% for question in quests %}
+                <a href="{%  url 'question:each-question' question.id %}">{{ question.quest }}</a>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>没有找到您所需要的内容</p>
+    {% endif %}
+{% endblock %}

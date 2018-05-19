@@ -1,0 +1,3 @@
+[{"model": "question.Question", "pk": "041001", "fields": {"quest": "光能如何影响光合作用?", "answer": "光能是ATP的合成的条件,,而ATP的合成是光反应的子过程,而光反应是光合作用的子过程。从而光能影响光合作用。", "question_type": 41}},
+{"model": "question.Question", "pk": "041002", "fields": {"quest": "光能如何影响光合作用?", "answer": "光能是水的光解的条件,,而水的光解是光反应的子过程,而光反应是光合作用的子过程。从而光能影响光合作用。", "question_type": 41}},
+{"model": "question.Question", "pk": "041003", "fields": {"quest": "光合色素如何影响光合作用?", "answer": "光合色素是水的光解的条件,,而水的光解是光反应的子过程,而光反应是光合作用的子过程。从而光合色素影响光合作用。", "question_type": 41}}]

@@ -1,0 +1,18 @@
+{% extends "question/base.html" %}
+
+{% block title%}答案{% endblock %}
+
+{% block detail %}
+    <div class="container">
+        <div class="col-md-offset-4 col-md-4">
+            <form class="form-horizontal" action="{% url 'question:show-answer' %} " method='post'>
+                {% csrf_token %}
+                <div>问题：{{ Quest.quest }} </div>
+                <div>您的答案:{{ Answer.user_answer }}</div>
+                <div>参考答案:{{ Quest.answer }}</div>
+                <button type="reset" class="btn btn-default pull-left">重置</button>
+                <button type="submit" class="btn btn-primary pull-right">提交</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

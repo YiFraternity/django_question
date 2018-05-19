@@ -1,0 +1,40 @@
+{% extends "base.html"%}
+{% load staticfiles %}
+{% block title %}注册{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="col-md-offset-4 col-md-4">
+            <form class="form-register" action="/question/register/" method="post">
+                {% csrf_token %}
+                <h2 class="text-center">欢迎注册</h2>
+                <div class="form-group">
+                    {{ register.username.label_tag }}
+                    {{ register.username }}
+                </div>
+                <div class="form-group">
+                    {{ register.password1.label_tag }}
+                    {{ register.password1 }}
+                </div>
+                <div class="form-group">
+                    {{ register.password2.label_tag }}
+                    {{ register.password2 }}
+                </div>
+                <div class="form-group">
+                    {{ register.email.label_tag }}
+                    {{ register.email }}
+                </div>
+                <div class="form-group">
+                    {{ register.sex.label_tag }}
+                    {{ register.sex }}
+                </div>
+                <div class="form-group">
+                    {{ register.grade.label_tag }}
+                    {{ register.grade }}
+                </div>
+                <button type="reset" class="btn btn-default pull-left">重置</button>
+                <button type="submit" class="btn btn-primary pull-right">提交</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

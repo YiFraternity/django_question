@@ -1,0 +1,18 @@
+{% extends 'question/base.html' %}
+{% block title %}此问题{% endblock %}
+{% block detail %}
+    <div>
+        <div class="container">
+            <div class = "col-md-offset-4 col-md-4">
+                <form class="form-horizontal" action="{% url 'question:each-question' Quest.id %}" method='POST'>
+                    {% csrf_token %}
+                    <div class='form-group'>
+                        题目：{{ Quest.quest }}
+                    </div>
+                    <button class='btn btn-default pull-left'><a href="{% url 'question:default' %}">返回</a></button>
+                    <button class='btn btn-default pull-right'><a href="{% url 'question:ask-question' %}">答题</a></button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

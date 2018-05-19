@@ -1,0 +1,11 @@
+{% extends 'question/base.html' %}
+{% block title %}此类问题{% endblock %}
+{% block detail %}
+    <div>
+        {% for Quest in Quests %}
+            <li>
+                 <a href="{%  url 'question:each-question' Quest.id %}">{{ Quest.quest }}</a>
+            </li>
+        {% endfor %}
+    </div>
+{% endblock %}

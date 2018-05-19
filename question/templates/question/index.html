@@ -1,0 +1,12 @@
+{% extends 'question/base.html' %}
+{% block title %}问题{% endblock %}
+{% block detail %}
+    <div>
+        <b>学科</b>
+        <div>
+            <li>
+                <a href="{% url 'question:default' %}">生物</a>
+            </li>
+        </div>
+    </div>
+{% endblock %}
