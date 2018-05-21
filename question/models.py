@@ -7,13 +7,12 @@ class MyUser(models.Model):
     email = models.EmailField(max_length=100, unique=True)
     sex = models.CharField(max_length=10)
     gender = models.CharField(max_length=10)
-    
+ 
     class Meta:
         db_table = "MyUser"
 
 
 class Question(models.Model):
-
     id = models.CharField(primary_key=True,max_length=20)
     quest = models.CharField(max_length=300)
     answer = models.CharField(max_length=300)
@@ -26,7 +25,8 @@ class Question(models.Model):
     06：实验题
     """
     question_type = models.IntegerField(default=0)
-
+    img_location = models.CharField(max_length=300,default="")
+    answer_keyword = models.CharField(max_length=300,default="")
     class Meta:
         db_table = "question_table"
 
