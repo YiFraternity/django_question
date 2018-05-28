@@ -1,0 +1,6 @@
+[{"model": "question.Question", "pk": "033001", "fields": {"quest": "二氧化碳的固定与三碳化合物的还原如何联系？", "answer": "从三碳化合物的还原产生的五碳化合物作为二氧化碳的固定的原料", "question_type": 33, "answer_keyword": "三碳化合物,光合作用,暗反应,三碳化合物的还原,光合作用,暗反应,二氧化碳的固定"}},
+{"model": "question.Question", "pk": "033002", "fields": {"quest": "三碳化合物的还原与二氧化碳的固定如何联系？", "answer": "从二氧化碳的固定产生的三碳化合物作为三碳化合物的还原的原料", "question_type": 33, "answer_keyword": "Pi,光合作用,光反应,ATP的合成,光合作用,暗反应,三碳化合物的还原"}},
+{"model": "question.Question", "pk": "033003", "fields": {"quest": "光反应与暗反应如何联系？", "answer": "从暗反应里的三碳化合物的还原产生的Pi作为光反应里的ATP的合成的原料", "question_type": 33, "answer_keyword": "ADP,光合作用,光反应,ATP的合成,光合作用,暗反应,三碳化合物的还原"}},
+{"model": "question.Question", "pk": "033004", "fields": {"quest": "光反应与暗反应如何联系？", "answer": "从暗反应里的三碳化合物的还原产生的ADP作为光反应里的ATP的合成的原料", "question_type": 33, "answer_keyword": "ATP,光合作用,暗反应,三碳化合物的还原,光合作用,光反应,ATP的合成"}},
+{"model": "question.Question", "pk": "033005", "fields": {"quest": "暗反应与光反应如何联系？", "answer": "从光反应里的ATP的合成产生的ATP作为暗反应里的三碳化合物的还原的原料", "question_type": 33, "answer_keyword": "还原氢,光合作用,暗反应,三碳化合物的还原,光合作用,光反应,水的光解"}},
+{"model": "question.Question", "pk": "033006", "fields": {"quest": "暗反应与光反应如何联系？", "answer": "从光反应里的水的光解产生的还原氢作为暗反应里的三碳化合物的还原的原料", "question_type": 33, "answer_keyword": "五碳化合物,光合作用,暗反应,二氧化碳的固定,光合作用,暗反应,三碳化合物的还原"}}]
