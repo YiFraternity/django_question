@@ -8,6 +8,10 @@
             <form class="form-horizontal" action="{% url 'question:show-answer' %} " method='post'>
                 {% csrf_token %}
                 <div>问题：{{ Quest.quest }} </div>
+                <div>
+                    {% load staticfiles %}
+                    <img src="{% static img %}">
+                </div>
                 <div>您的答案:{{ Answer.user_answer }}</div>
                 <div>参考答案:{{ Quest.answer }}</div>
                 <button type="submit" class="btn btn-primary pull-right"><a href="{% url 'question:default' %}">提交</a></button>

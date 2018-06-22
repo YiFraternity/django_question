@@ -6,9 +6,8 @@
 </style>
 {% extends "base.html" %}
 {% load staticfiles %}
-
 {% block search %}
-<form action='{% url 'question:search' %}' method='post'>
+    <form action='{% url 'question:search' %}' method='post'>
         {% csrf_token %}
         <input type='text' name='search' class='boxes'>
         <button type='submit' class='btn btn-default'>搜索</button>

@@ -5,7 +5,6 @@ from . import views
 
 app_name = "question"
 
-
 urlpatterns = [
         #ex:/question/
         path('index/', views.index,name='index'),
@@ -19,5 +18,10 @@ urlpatterns = [
         path('type/<int:qType>/',views.type_quests,name="type-questions"),
         path('show-answer/',views.show_answer,name='show-answer'),
         path('search/',views.search,name='search'),
+        path('practice/',views.practice,name='practice'),
+        path('practice-show-answer/',views.practice_show_answer,name='practice-show-answer'),
+        path('practice/<str:question>/',views.practice_quest,name='practice-each-question'),
+        path('practice-ask-question/',views.practice_ask_answer,name='practice-ask-question'),
+        path('practice-continue/',views.practice_continue,name='practice-continue'),
 ]
 urlpatterns += staticfiles_urlpatterns()

@@ -1,3 +1,9 @@
+<style type="text/css">
+    .boxes{
+        font-size:14px;
+        color:#000;
+    }
+</style>
 {% extends "base.html" %}
 {% load staticfiles %}
 {% block title %}登录{% endblock %}
@@ -19,10 +25,10 @@
                 {% csrf_token %}
                 <p class="form-actions">
                     <div class="form-group">
-                        用户名:<input type="username" class="form-control"  placeholder="username" name="username" class="boxes">
+                        用户名:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="username"   placeholder="username" name="username" class="form-group boxes">
                     </div>
                     <div class="form-group">
-                        密码:<input type="password" class="form-control"  placeholder="password" name="password" class="boxes">
+                        密码:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password"  placeholder="password" name="password" class="form-group boxes">
                     </div>
                     <button type="reset"  value="reset" class="btn btn-default pull-left">重置</button>
                     <button type="submit" value="login" class="btn btn-primary pull-right">提交</button>

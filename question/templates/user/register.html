@@ -1,3 +1,9 @@
+<style type="text/css">
+    .boxes{
+        font-size:14px;
+        color:#000;
+    }
+</style>
 {% extends "base.html"%}
 {% load staticfiles %}
 {% block title %}注册{% endblock %}
@@ -8,29 +14,23 @@
             <form class="form-register" action="/question/register/" method="post">
                 {% csrf_token %}
                 <h2 class="text-center">欢迎注册</h2>
-                <div class="form-group">
-                    {{ register.username.label_tag }}
-                    {{ register.username }}
+                <div class="form-group boxes">
+                    用户名:&nbsp;&nbsp;&nbsp;&nbsp;{{ register.username }}
                 </div>
-                <div class="form-group">
-                    {{ register.password1.label_tag }}
-                    {{ register.password1 }}
+                <div class="form-group boxes">
+                    密码:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ register.password1 }}
                 </div>
-                <div class="form-group">
-                    {{ register.password2.label_tag }}
-                    {{ register.password2 }}
+                <div class="form-group boxes">
+                    确认密码:{{ register.password2 }}
                 </div>
-                <div class="form-group">
-                    {{ register.email.label_tag }}
-                    {{ register.email }}
+                <div class="form-group boxes">
+                    邮箱:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ register.email }}
                 </div>
-                <div class="form-group">
-                    {{ register.sex.label_tag }}
-                    {{ register.sex }}
+                <div class="form-group boxes">
+                    性别:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ register.sex }}
                 </div>
-                <div class="form-group">
-                    {{ register.grade.label_tag }}
-                    {{ register.grade }}
+                <div class="form-group boxes">
+                    年级:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ register.grade }}
                 </div>
                 <button type="reset" class="btn btn-default pull-left">重置</button>
                 <button type="submit" class="btn btn-primary pull-right">提交</button>

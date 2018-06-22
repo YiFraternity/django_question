@@ -1,0 +1,30 @@
+<style type="text/css">
+    .boxes{
+        font-size:14px;
+        color:#000;
+    }
+</style>
+{% extends "question/base.html" %}
+
+{% block title%}答题{% endblock %}
+
+{% block detail %}
+    <div class="container">
+        <div class="col-md-offset-4 col-md-4">
+            <form class="form-horizontal" action="/question/ask-question/" method='post'>
+                {% csrf_token %}
+                <div>问题：{{ Quest.quest }} </div>
+                <div>
+                    {% load staticfiles %}
+                    <img src="{% static img %}">
+                </div>
+                <div>请写下您的答案：</div>
+                <div>
+                    <textarea name="user_answer" id='user_answer' rows="10" cols="30" class="boxes"></textarea>
+                </div>
+                <button type="reset" class="btn btn-default pull-left">重置</button>
+                <button type="submit" class="btn btn-primary pull-right">提交</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

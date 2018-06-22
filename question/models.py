@@ -39,7 +39,7 @@ class Entry(models.Model):
     user_answer = models.CharField(max_length=300)    #用户答案
 
     class Meta:
-        db_table = "user-answer"
+        db_table = "user_answer"
         unique_together = ("question","username","version")
 
 

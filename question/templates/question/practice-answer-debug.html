@@ -1,0 +1,22 @@
+{% extends "question/base.html" %}
+
+{% block title%}答案{% endblock %}
+
+{% block detail %}
+    <div class="container">
+        <div class="col-md-offset-4 col-md-4">
+            <form class="form-horizontal" action="{% url 'question:practice-show-answer' %} " method='post'>
+                {% csrf_token %}
+                <div>问题：{{ Quest.quest }} </div>
+                <div>您的答案:{{ Answer.user_answer }}</div>
+                <div>参考答案:{{ Quest.answer }}</div>
+                <div>参考答案关键词:{{ Quest.answer_keyword }}</div>
+                <div>您答的关键词:{{ answeredKeywordStr }}</div>
+                <div>您未答的关键词:{{ unansweredKeywordStr }}</div>
+                <div>您的正确率:{{ correct_rate }}</div>
+                <button class="btn btn-default pull-left"><a href="{% url 'question:practice' %}">返回</a></button>
+                <button class="btn btn-default pull-right"><a href="{% url 'question:practice-continue' %}">继续</a></button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

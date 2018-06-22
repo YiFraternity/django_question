@@ -23,8 +23,10 @@
 <body>
     <div>
         <img src="/static/img/logo.png">
-        {% block search %}{% endblock %}
     </div>
-    {% block content %}{% endblock %}
+    {% block content %}
+        {% block register %}{% endblock %}
+        {% block search %}{% endblock %}
+    {% endblock %}
 </body>
 </html>
