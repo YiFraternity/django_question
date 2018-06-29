@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b34e3976-304d-4763-a011-77db5cf4a288" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/experimentProblemJson.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/experimentProblemJson.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/rawoutputOfRelationProblemJson.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/rawoutputOfRelationProblemJson.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/question/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/question/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question/templates/question/answer.html" beforeDir="false" afterPath="$PROJECT_DIR$/question/templates/question/answer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question/templates/question/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/question/templates/question/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question/templates/question/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/question/templates/question/default.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/question/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/question/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.json" beforeDir="false" />
-    </list>
+    <list default="true" id="b34e3976-304d-4763-a011-77db5cf4a288" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,8 +23,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/question/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4017">
-              <caret line="217" selection-start-line="217" selection-end-line="217" />
+            <state relative-caret-position="126">
+              <caret line="222" column="89" lean-forward="true" selection-start-line="222" selection-start-column="89" selection-end-line="222" selection-end-column="89" />
             </state>
           </provider>
         </entry>
@@ -44,7 +32,7 @@
       <file leaf-file-name="calculation.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/question/calculation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
+            <state relative-caret-position="1764">
               <caret line="87" selection-start-line="87" selection-end-line="87" />
             </state>
           </provider>
@@ -53,7 +41,7 @@
       <file leaf-file-name="random.py" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/anaconda/envs/django/lib/python3.6/random.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
+            <state relative-caret-position="4452">
               <caret line="220" selection-start-line="220" selection-end-line="220" />
             </state>
           </provider>
@@ -841,22 +829,22 @@
     </entry>
     <entry file="file://$USER_HOME$/anaconda/envs/django/lib/python3.6/random.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
+        <state relative-caret-position="4452">
           <caret line="220" selection-start-line="220" selection-end-line="220" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/question/calculation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
+        <state relative-caret-position="1764">
           <caret line="87" selection-start-line="87" selection-end-line="87" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/question/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4017">
-          <caret line="217" selection-start-line="217" selection-end-line="217" />
+        <state relative-caret-position="126">
+          <caret line="222" column="89" lean-forward="true" selection-start-line="222" selection-start-column="89" selection-end-line="222" selection-end-column="89" />
         </state>
       </provider>
     </entry>
